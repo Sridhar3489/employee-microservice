@@ -1,11 +1,13 @@
-server:
-  port: 8081
+#server:
+#  port: 8081
 
 spring:
   application:
     name: department-service
+#  config:
+#    import: "${CONFIG_SERVER_URL}" docker env - SPRING_CONFIG_IMPORT
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
