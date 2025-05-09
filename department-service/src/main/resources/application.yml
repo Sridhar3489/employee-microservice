@@ -7,6 +7,21 @@ spring:
 #  config:
 #    import: "${CONFIG_SERVER_URL}" docker env - SPRING_CONFIG_IMPORT
 
+#  zipkin:
+#    base-url: http://zipkin:9411
+#    enabled: true
+#
+#management:
+#  tracing:
+#    sampling:
+#      probability: 1.0  # This ensures all traces are sent
+
+
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
 #eureka:
 #  client:
 #    serviceUrl:
