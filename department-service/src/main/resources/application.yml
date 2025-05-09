@@ -1,11 +1,22 @@
-server:
-  port: 8081
+#server:
+#  port: 8081
 
 spring:
   application:
     name: department-service
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
+#  zipkin:
+#    base-url: http://zipkin:9411
+#    enabled: true
+#
+#management:
+#  tracing:
+#    sampling:
+#      probability: 1.0  # This ensures all traces are sent
+
+
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
