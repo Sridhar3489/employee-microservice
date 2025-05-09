@@ -30,3 +30,7 @@ spring:
 #      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
 ```
 - Only the application name is required in the configuration file of the service, rest of the configurations will be fetched from the config server
+
+### Zipkin
+- https://hub.docker.com/r/openzipkin/zipkin/
+- 9411
