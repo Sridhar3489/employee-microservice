@@ -9,6 +9,7 @@
 - Eureka Discovery Client
 - Spring Boot Actuator
 - Config Client
+- Spring Reactive Web - webflux
 
 ### config-server
 - Config Server from Spring Cloud Gateway
@@ -51,3 +52,6 @@ export SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.MySQL8Dialect
 export SPRING_JPA_HIBERNATE_DDL_AUTO=update
 export SPRING_DATASOURCE_PASSWORD=password
 ```
+
+### Http Exchange
+- Connecting employee-service to department-service
