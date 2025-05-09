@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/employees")
 public class EmployeeController {
@@ -39,5 +41,12 @@ public class EmployeeController {
         log.info("Deleting employee with id: " + id);
         employeeRepository.deleteById(id);
     }
+
+    @GetMapping("/dep/{id}")
+    public List<Employee> findByDepartment(@PathVariable Long id){
+        log.info("Getting employees by department id: " + id);
+        return employeeRepository.findByDepartmentId(id);
+    }
+
 
 }
