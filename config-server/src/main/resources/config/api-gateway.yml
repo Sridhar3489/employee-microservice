@@ -1,0 +1,33 @@
+server:
+  port: 4004
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
+
+spring:
+  zipkin:
+    base-url: http://localhost:9411
+    enabled: true
+  cloud:
+    gateway:
+      routes:
+        - id: department-service-route
+          uri: lb://department-service:8001
+          predicates:
+            - Path=/dep/**
+          filters:
+            - StripPrefix=1
+
+        - id: employee-service-route
+          uri: lb://employee-service:8002
+          predicates:
+            - Path=/emp/**
+          filters:
+            - StripPrefix=1
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
