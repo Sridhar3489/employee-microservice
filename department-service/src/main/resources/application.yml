@@ -4,6 +4,8 @@
 spring:
   application:
     name: department-service
+#  config:
+#    import: "${CONFIG_SERVER_URL}" docker env - SPRING_CONFIG_IMPORT
 
 #  zipkin:
 #    base-url: http://zipkin:9411
@@ -16,6 +18,10 @@ spring:
 
 
 #
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
 #eureka:
 #  client:
 #    serviceUrl:
