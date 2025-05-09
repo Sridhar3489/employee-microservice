@@ -40,7 +40,7 @@ spring:
 - Zipkin
 - Config Client - to connect to config server
 - Eureka Discovery Client - to connect to service registry
-- 
+
 ``` bash
 export SPRING_CONFIG_IMPORT=optional:configserver:http://localhost:8088
 export EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://localhost:8761/eureka
