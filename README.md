@@ -55,3 +55,13 @@ export SPRING_DATASOURCE_PASSWORD=password
 
 ### Http Exchange
 - Connecting employee-service to department-service
+
+### API Gateway
+- Spring Cloud Gateway
+- Reactive Gateway
+- Config Client
+- Eureka Discovery Client
+- Zipkin
+`lb://employee-service` to connect to employee-service
+`lb://department-service` to connect to department-service
+- In case of docker, `http://container-name`
